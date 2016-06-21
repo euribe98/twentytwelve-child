@@ -1,0 +1,173 @@
+/*
+ Theme Name:   twentytwelve Child Theme
+ Theme URI:    http://www.bellasjardin.com/
+ Description:  twentytwelve child theme 
+ Author:       Evan Uribe
+ Author URI:   http://www.bellasjardin.com
+ Template:     twentytwelve
+ Version:      1.0.0
+*/
+
+@import url("../twentytwelve/style.css");
+
+
+/* move side bar from right to left */
+/*
+@media screen and (min-width: 56.875em) {
+.content-area {
+	float: right;
+	margin-right: 0;
+}
+
+#secondary,
+.sidebar widget-area{
+	float: left;
+	margin-left: 0;
+}
+} */
+
+
+/* hide page titles */
+.entry-title {
+   display:none;
+}
+
+/* but don't hide titles on blog page  */
+.blog .entry-title {
+   display: block;
+}
+
+/* remove space from above the Site Title  */
+#masthead {
+   padding-top: 0px !important;
+   padding-bottom: 12px !important;
+}
+
+/* remove space between the nav menu and the header */
+.header-image { 
+	margin-top: 0; 
+}
+
+.main-navigation {
+    margin-top: 0;
+}
+
+
+/* reduce spacing and add border between blogs */
+.blog article {
+	margin-bottom: 30px !important;
+	/*border-bottom: 1px solid grey;*/
+}
+
+
+/* customize your blog posts and all page’s title’s font, font color, size */
+.entry-title, .entry-title a {
+	color: black !important;
+	font-size: 20px !important;
+	font-weight: bold !important;
+	font-family: sans serif !important;
+}
+
+
+/* reduce margins between headings and text in posts and pages */
+.entry-content h1, .comment-content h1, .entry-content h2, .comment-content h2, .entry-content h3, .comment-content h3, .entry-content h4, .comment-content h4, .entry-content h5, .comment-content h5, .entry-content h6, .comment-content h6 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+/* sidebar was removed from woocommerce given functions.php. */
+/* Now make the product page full width. Added woocommerce.php */
+
+#content-fullwidth{
+    margin-left: 20px;
+	width: 90%;
+}
+
+/* remove borders around images  */
+.entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
+    border-radius: 3px;
+    /* box-shadow: 0 1px 4px rgba(0,0,0,0.2); */
+    box-shadow: none;
+}
+
+/*  search widget */
+.searchform {
+}
+
+/* content area */
+.site-content {
+    float: left;
+    /*width: 65.1042%;*/
+    width: 75%;
+    /*margin: 1.71429rem 0 0;*/
+    margin: 0 0 0 0;
+}
+
+/* widget area */
+.widget-area {
+    float: right;
+    /* width: 26.0417%;*/
+    width: 20%;
+    /*margin: 1.71429rem 0 0;*/
+    margin: 0 0 0 0;
+}
+
+
+/* reduce margins between widgets */
+.widget-area .widget {
+    /*margin-bottom: 3.42857rem;*/
+    margin-bottom: 2rem;
+}
+
+
+/* reduce h3 headings within widgets */
+.widget-area .widget h3 {
+    /*margin-bottom: 1.71429rem;*/
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+/* reduce margins for p elements for widgets in the widget area*/
+.widget-area .widget p {
+    /*margin-bottom: 1.71429rem;*/
+    margin-bottom: .5rem;
+}
+
+
+/* align email input and email submit button */
+.jetpack_subscription_widget #subscribe-email input {
+    width: 195px;
+    text-align: center;
+}
+
+.jetpack_subscription_widget #subscribe-submit input {
+    width: 209px;
+}
+
+/* align categories selection */
+select {
+    width: 200px;
+}
+
+/* increase size of jetpack social icons */
+.widget_wpcom_social_media_icons_widget .genericon {
+    font-size: 20px;
+}
+
+/* align text width for contact form  */
+.contact-form input[type="email"], .contact-form input[type="text"] { 
+	/* width: 300px; */
+	width: 80% !important;
+}
+
+
+/* hide tags from posts and comments. does not work in twentytwelve?  */
+body:not(.search-results) .tags-links, body:not(.search-results) article:not(.type-page) .comments-link {display: none;}
+
+
+/* hide categories and tags from posts and comments. does not work in twentytwelve? */
+body:not(.search-results) .cat-links, body:not(.search-results) .tags-links ,body:not(.search-results) article:not(.type-page) .comments-link {display: none;}
+
+
+
